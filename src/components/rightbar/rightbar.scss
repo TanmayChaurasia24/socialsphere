@@ -1,0 +1,44 @@
+.rightbar{
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .container{
+
+
+        .item{
+            
+            span {
+                color: gray;
+            }
+
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .userinfo{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
